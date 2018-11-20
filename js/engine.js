@@ -7,8 +7,11 @@ var won = 0;
 var lost = 0;
 var draw = 0;
 
+$('button').click(function(event){  var play_you = this.getAttribute("value");  console.log(play_you);});
 
 /* Listen for the button clicks */
+
+/*
 $("#rock").click(function(event) {
   var move_you = 'rock';
   $("#play_you").text(move_you);
@@ -29,6 +32,8 @@ $("#scissors").click(function(event) {
   var play_machine = computer_move();
   compare(move_you , play_machine);
 });
+
+*/
 
 function computer_move() {
   var play_machine = Math.floor(Math.random() * (3 - 0)) + 0;
@@ -82,5 +87,4 @@ $("#verdict").text(verdict);
 
 played++;
 $("#game_played").text(played);
-
 }
