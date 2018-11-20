@@ -7,16 +7,18 @@ var won = 0;
 var lost = 0;
 var draw = 0;
 
-$('button').click(function(event){  var play_you = this.getAttribute("value");  console.log(play_you);});
+$('button').click(function(event){  var play_you = this.getAttribute("value");  console.log(play_you);
+$("#play_you").text(play_you);
+var play_machine = computer_move();
+compare(play_you, play_machine);
+});
 
 /* Listen for the button clicks */
 
 /*
 $("#rock").click(function(event) {
   var move_you = 'rock';
-  $("#play_you").text(move_you);
-  var play_machine = computer_move();
-  compare(move_you, play_machine);
+
 });
 
 $("#paper").click(function(event) {
@@ -32,7 +34,6 @@ $("#scissors").click(function(event) {
   var play_machine = computer_move();
   compare(move_you , play_machine);
 });
-
 */
 
 function computer_move() {
@@ -48,6 +49,7 @@ $("#game_draw").empty();
 
   return play_machine;
 }
+
 
 function compare(you, machine){
 
@@ -83,8 +85,25 @@ function compare(you, machine){
     $("#game_draw").text(draw);
   }
 
-$("#verdict").text(verdict);
+  $("#verdict").text(verdict);
 
-played++;
-$("#game_played").text(played);
-}
+  played++;
+  $("#game_played").text(played);
+  }
+
+
+
+/*
+switch (verdict) {
+  case 'win': won++;
+  $("#won").text(won);
+  break;
+  case 'lose':
+  lost++;
+  $("#lost").text(lost);
+  break;
+  case 'draw':
+  draw++;
+  $("#draw").text(draw);
+  break;}
+*/
