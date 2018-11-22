@@ -47,22 +47,6 @@ function compare(you, machine){
     verdict = 'win';
   }
 
-/*
-  if ( verdict == 'win') {
-    won++;
-    $("#game_won").text(won);
-  }
-
-  if ( verdict == 'lose') {
-    lost++;
-    $("#game_lost").text(lost);
-  }
-  if ( verdict == 'draw') {
-    draw++;
-    $("#game_draw").text(draw);
-  }
-  */
-
 switch (verdict) {
     case 'win':won++;
     $("#game_won").text(won);
