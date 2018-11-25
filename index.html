@@ -3,19 +3,45 @@
 <head>
   <title>Rock Paper Scissors</title>
   <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet"/>
 </head>
 
-<body>
-    <div class="bg">
-      <header>
-      <h1>Rock Paper Scissors</h1>
-    </header>
+<div class="bg">
 
-    <button id="rock" value="rock">Rock</button>
-    <button id="paper" value="paper">Paper</button>
-    <button id="scissors" value="scissors">Scissors</button>
+<body>
+
+      <header class="background-image">
+        <div class="container-fluid">
+          <h1>Which will you choose?</h1>
+
+<div class="container">
+          <div class="row justify-content-center">
+
+    <div class="col-4">
+      <img class="game-objects" src="images/rock.png" alt="cartoon of angry piece of paper."/>
+      <button id="rock" value="rock">Rock</button>
+    </div>
+
+    <div class="col-4">
+      <img class= "game-objects" src="images/paper.png" alt="cartoon of angry piece of paper."/>
+      <button id="paper" value="paper">Paper</button>
+    </div>
+
+    <div class="col-4">
+      <img class="game-objects" src="images/scissors.png" alt="cartoon of angry piece of paper."/>
+      <button id="scissors" value="scissors">Scissors</button>
+    </div>
+
+  </div>
+</div>
+
+        </div>
+      </header>
+
+<div class="container">
+
 
     <section>
       <h2>Current move</h2>
@@ -29,11 +55,15 @@
       <p>Draw: <span id="game_draw">0</span></p>
       <p>Played: <span id="game_played">0</span></p>
     </section>
+  </div>
+
+</div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/engine.js"></script>
 
-  </div><!--.bg-->
 </body>
+</div><!--.bg-->
 
 </html>
