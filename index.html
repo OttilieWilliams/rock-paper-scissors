@@ -1,35 +1,39 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
-<title>Rock Paper Scissors</title>
-<link rel="icon" type="image/png" href="images/tiny-scissors.png" />
-<link href="css/css.css" rel="stylesheet">
+  <title>Rock Paper Scissors</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet"/>
 </head>
 
 <body>
-  <h1>Rock Paper Scissors</h1>
-  <button id="rock" value="rock">Rock</button>
-  <button id="paper" value="paper">Paper</button>
-  <button id="scissors" value="scissors">Scissors</button>
+    <div class="bg">
+      <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
 
-  <section>
-    <h2>Current move</h2>
-    <p>You: <span id="play_you"></span></p>
-    <p>Machine: <span id="play_machine"></span></p>
+    <button id="rock" value="rock">Rock</button>
+    <button id="paper" value="paper">Paper</button>
+    <button id="scissors" value="scissors">Scissors</button>
 
-    <h2>Result</h2>
-    <h3>Verdict: <span id="verdict"></span></h3>
-    <p>Won: <span id="game_won">0</span></p>
-    <p>Lost: <span id="game_lost">0</span></p>
-    <p>Draw: <span id="game_draw">0</span></p>
-    <p>Played: <span id="game_played">0</span></p>
-  </section>
+    <section>
+      <h2>Current move</h2>
+      <p>You: <span id="play_you"></span></p>
+      <p>Machine: <span id="play_machine"></span></p>
 
-  <script
-  	src="https://code.jquery.com/jquery-3.3.1.min.js"
-  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  	crossorigin="anonymous"></script>
-  <script src="js/engine.js"></script>
+      <h2>Result</h2>
+      <h3>Verdict: <span id="verdict"></span></h3>
+      <p>Won: <span id="game_won">0</span></p>
+      <p>Lost: <span id="game_lost">0</span></p>
+      <p>Draw: <span id="game_draw">0</span></p>
+      <p>Played: <span id="game_played">0</span></p>
+    </section>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/engine.js"></script>
+
+  </div><!--.bg-->
 </body>
+
 </html>

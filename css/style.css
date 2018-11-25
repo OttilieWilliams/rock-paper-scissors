@@ -1,0 +1,8 @@
+.bg {
+    background-image: url("../images/mountains.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 80px;
+}
