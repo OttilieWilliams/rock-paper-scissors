@@ -1,69 +1,91 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
   <title>Rock Paper Scissors</title>
   <meta charset="utf-8" />
   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<div class="bg">
 
 <body>
+  
+  <div class="background-image">
 
-      <header class="background-image">
-        <div class="container-fluid">
-          <h1>Which will you choose?</h1>
+    <header>
+      <h1>Which will you choose?</h1>
+    </header>
 
-<div class="container">
-          <div class="row justify-content-center">
+    <main>
 
-    <div class="col-4">
-      <img class="game-objects" src="images/rock.png" alt="cartoon of angry piece of paper."/>
-      <button id="rock" value="rock">Rock</button>
-    </div>
+      <div class="container">
+        <div class="row justify-content-center">
 
-    <div class="col-4">
-      <img class= "game-objects" src="images/paper.png" alt="cartoon of angry piece of paper."/>
-      <button id="paper" value="paper">Paper</button>
-    </div>
+          <div class="col-4">
+            <button id="rock" value="rock"><img class="game-objects image-fluid" src="images/rock.png" alt="cartoon of shocked rock with it's mouth open wide in surprice." />Rock</button>
+          </div>
 
-    <div class="col-4">
-      <img class="game-objects" src="images/scissors.png" alt="cartoon of angry piece of paper."/>
-      <button id="scissors" value="scissors">Scissors</button>
-    </div>
+          <div class="col-4">
+            <button id="paper" value="paper"><img class="game-objects image-fluid" src="images/paper.png" alt="cartoon of tired, bored piece of paper." />Paper</button>
+          </div>
 
-  </div>
-</div>
+          <div class="col-4">
+            <button id="scissors" value="scissors"><img class="game-objects image-fluid" src="images/scissors.png" alt="cartoon of a pair of anxious scissors." />Scissors</button>
+          </div>
 
         </div>
-      </header>
+        <!--.row-->
+      </div>
+      <!--.container-->
 
-<div class="container">
+      <section class=choice-section>
+        <div class="container">
+          <div class="row justify-content-center">
 
+            <div class="col-6">
+              <p class="choice">You choose: <span id="play_you"></span></p>
+            </div>
 
-    <section>
-      <h2>Current move</h2>
-      <p>You: <span id="play_you"></span></p>
-      <p>Machine: <span id="play_machine"></span></p>
+            <div class="col-6">
+              <p class="choice">Machine chooses: <span id="play_machine"></span></p>
+            </div>
 
-      <h2>Result</h2>
-      <h3>Verdict: <span id="verdict"></span></h3>
-      <p>Won: <span id="game_won">0</span></p>
-      <p>Lost: <span id="game_lost">0</span></p>
-      <p>Draw: <span id="game_draw">0</span></p>
-      <p>Played: <span id="game_played">0</span></p>
-    </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="verdict">
+        <h2>Verdict: <span id="verdict"></span></h2>
+      </section>
+
+      <section class="results-section">
+
+        <h3>Results table</h3>
+        <p class="results">Won: <span id="game_won">0</span></p>
+        <p class="results">Lost: <span id="game_lost">0</span></p>
+        <p class="results">Draw: <span id="game_draw">0</span></p>
+        <p class="results">Played: <span id="game_played">0</span></p>
+
+      </section>
+
   </div>
 
-</div>
+  </div>
 
+  </main>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/engine.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/engine.js"></script>
+
+  </div>
+  <!--background-image-->
 
 </body>
-</div><!--.bg-->
+
+
+
 
 </html>
